@@ -25,7 +25,7 @@ products.forEach((product) => {
             <div class="product-rating-count link-primary">${product.rating.count}</div>
           </div>
 
-          <div class="product-price">$${(product.pricecents/100).toFixed(2)}</div>
+          <div class="product-price">$${(product.priceCents/100).toFixed(2)}</div>
 
           <div class="product-quantity-container">
             <select>
@@ -72,5 +72,5 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     addToCart(productId);
     updateCartQuantity();
     
-  })
-})
+  });
+});
